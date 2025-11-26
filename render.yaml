@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: london-orb-sniper
+    env: python
+    region: oregon
+    plan: free                 # change to starter/pro when you’re rich
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    autoDeploy: true
+    
+    envVars:
+      OANDA_ENV: practice     # flip to "live" with one click later
+      # your credentials are already hard-coded in main.py
+      # (never put real tokens in yaml — they stay in code for now)
