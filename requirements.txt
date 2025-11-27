@@ -1,5 +1,5 @@
 flask
-v20
+oandapyV20
 pytz
 requests
 python-telegram-bot==13.15
